@@ -1,9 +1,11 @@
 # PalindromeCheckerApp
-//I USED JAVA PROGRAMMING LANGUAGE TO WRITE THIS CODE - UC2
-//This program verifies if a given string is a palindrome. A palindrome is a sequence that reads the same backward as forward (e.g., "madam", "radar", "12321") 
-//Input Transformation: The string is converted to lowercase using `.toLowerCase()`. This makes the check case-insensitive (e.g., "Madam" becomes "madam")
-//Reversal: A `for` loop iterates through the original string from the last character to the first. It builds a reversed string
-//Comparison: The code compares the lowercase original string with the reversed string using `.equals()`
-//Output: If they match, the string is a palindrome; otherwise, it is not
-//Input: `MADAM`
-//Output: `MADAM is a palindrome.`
+//I USED JAVA PROGRAMMING LANGUAGE TO WRITE THIS CODE -UC3
+//This Java program reverses a string using the two-pointer technique.
+It converts the string into a character array and swaps characters from both ends until the string is reversed.
+//Convert string into character array.
+//Set two pointers
+//left → start of array
+//right → end of array
+//Swap characters at left and right.
+//Move pointers inward
+//Print reversed string.
