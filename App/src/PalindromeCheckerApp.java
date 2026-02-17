@@ -1,36 +1,38 @@
 public class PalindromeCheckerApp {
-    public static void main(String[] args){
-        System.out.println("Author - MADHUMITHA");
-        System.out.println("VERSION - 3.0");
 
+    public static boolean isPalindrome(String input) {
 
-        String input = "Hello";
+        // Convert string to character array
         char[] chars = input.toCharArray();
 
+        // Two pointer approach
         int left = 0;
         int right = chars.length - 1;
 
-        // Reverse logic
+        // Compare characters from both ends
         while (left < right) {
-            char temp = chars[left];
-            chars[left] = chars[right];
-            chars[right] = temp;
-
+            if (chars[left] != chars[right]) {
+                return false; // Not a palindrome
+            }
             left++;
             right--;
         }
 
-        String reversed = new String(chars);
+        return true; // Palindrome
+    }
+    public static void main(String[] args){
+        System.out.println("Author - MADHUMITHA");
+        System.out.println("VERSION - 4.0");
 
-        // Display original and reversed
-        System.out.println("Original String: " + input);
-        System.out.println("Reversed String: " + reversed);
 
-        // Compare both strings
-        if (input.equals(reversed)) {
-            System.out.println("Both strings are SAME (Palindrome)");
+        String input = "MADAM";
+
+        System.out.println("Input String: " + input);
+
+        if (isPalindrome(input)) {
+            System.out.println("Result: Palindrome");
         } else {
-            System.out.println("Both strings are DIFFERENT (Not a Palindrome)");
+            System.out.println("Result: Not a Palindrome");
         }
     }
 }
