@@ -2,27 +2,25 @@ public class PalindromeCheckerApp {
 
     public static boolean isPalindrome(String input) {
 
-        // Convert string to character array
-        char[] chars = input.toCharArray();
+        Stack<Character> stack = new Stack<>();
 
-        // Two pointer approach
-        int left = 0;
-        int right = chars.length - 1;
-
-        // Compare characters from both ends
-        while (left < right) {
-            if (chars[left] != chars[right]) {
-                return false; // Not a palindrome
-            }
-            left++;
-            right--;
+        // Push each character into stack
+        for (char ch : input.toCharArray()) {
+            stack.push(ch);
         }
 
-        return true; // Palindrome
+        // Build reversed string using stack pop
+        String reversed = "";
+        while (!stack.isEmpty()) {
+            reversed += stack.pop();
+        }
+
+        // Compare original and reversed string
+        return input.equals(reversed);
     }
     public static void main(String[] args){
         System.out.println("Author - MADHUMITHA");
-        System.out.println("VERSION - 4.0");
+        System.out.println("VERSION - 5.0");
 
 
         String input = "MADAM";
