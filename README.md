@@ -1,15 +1,21 @@
 # PalindromeCheckerApp
-//I USED JAVA PROGRAMMING LANGUAGE TO WRITE THIS CODE -UC11
-//The PalindromeChecker App (UC11) demonstrates an Object-Oriented approach by encapsulating palindrome logic inside a dedicated service class.
-//This use case focuses on clean design principles and separation of responsibilities.
-//1. Read input from user
-//2. Create PalindromeChecker object
-//3. Call checkPalindrome() method
-//4. Method normalizes input
-//5. Apply two-pointer comparison logic
-//6. Return result
-//7. Display output
-
+//I USED JAVA PROGRAMMING LANGUAGE TO WRITE THIS CODE -UC12
+//The PalindromeChecker App (UC12) demonstrates the Strategy Design Pattern by allowing dynamic selection of different palindrome checking algorithms at runtime.
+//This use case focuses on abstraction, polymorphism, and flexible design.
+//Sample Execution:
+//Choose Palindrome Checking Strategy:
+//1. Stack Strategy
+//2. Deque Strategy
+   Enter choice (1 or 2): 1
+   Enter a string to check palindrome: madam
+   The given string is a Palindrome.
+//Application Flow:
+//1. Display strategy options
+//2. User selects algorithm
+//3. Create corresponding strategy object
+//4. Inject strategy into PalindromeService
+//5. Execute selected strategy
+//6. Display result
 
 
 
