@@ -1,17 +1,15 @@
 # PalindromeCheckerApp
 //I USED JAVA PROGRAMMING LANGUAGE TO WRITE THIS CODE -UC8
-//The PalindromeChecker App (UC9) checks whether a given string is a palindrome using Recursion.
-//This use case demonstrates how recursive calls, base conditions, and the call stack work together to solve a problem by dividing it into smaller subproblems.
+//The PalindromeChecker App (UC10) checks whether a given string is a palindrome while ignoring spaces and case differences.
+//This use case demonstrates string preprocessing using regular expressions and applying standard palindrome logic after normalization.
 //1. Read input string
-//2. Remove special characters & convert to lowercase
-//3. Call recursive method with:
-    - start = 0
-    - end = length - 1
-//4. Compare characters at start and end
-//5. Recursive call with:
-    - start + 1
-    - end - 1
-//6. Base condition stops recursion
-//7. Display result
+//2. Normalize string:
+    - Remove spaces
+    - Convert to lowercase
+//3. Apply two-pointer palindrome logic
+//4. Compare characters from both ends
+//5. Display result
+
+
 
 
