@@ -2,8 +2,6 @@ public class PalindromeCheckerApp {
     public static void main(String[] args){
         System.out.println("Author - MADHUMITHA");
         System.out.println("VERSION - 6.0");
-
-
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a string to check palindrome: ");
         String input = scanner.nextLine();
