@@ -1,14 +1,14 @@
 # PalindromeCheckerApp
-//I USED JAVA PROGRAMMING LANGUAGE TO WRITE THIS CODE -UC8
-//The PalindromeChecker App (UC10) checks whether a given string is a palindrome while ignoring spaces and case differences.
-//This use case demonstrates string preprocessing using regular expressions and applying standard palindrome logic after normalization.
-//1. Read input string
-//2. Normalize string:
-    - Remove spaces
-    - Convert to lowercase
-//3. Apply two-pointer palindrome logic
-//4. Compare characters from both ends
-//5. Display result
+//I USED JAVA PROGRAMMING LANGUAGE TO WRITE THIS CODE -UC11
+//The PalindromeChecker App (UC11) demonstrates an Object-Oriented approach by encapsulating palindrome logic inside a dedicated service class.
+//This use case focuses on clean design principles and separation of responsibilities.
+//1. Read input from user
+//2. Create PalindromeChecker object
+//3. Call checkPalindrome() method
+//4. Method normalizes input
+//5. Apply two-pointer comparison logic
+//6. Return result
+//7. Display output
 
 
 
